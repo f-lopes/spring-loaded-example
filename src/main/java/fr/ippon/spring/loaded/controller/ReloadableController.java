@@ -9,7 +9,7 @@ public class ReloadableController {
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String home() {
-        return "home";
+        return "reloaded-home";
     }
 
 }
