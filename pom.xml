@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ippon.spring.loaded.SpringLoadedExampleApplication</start-class>
 		<java.version>1.8</java.version>
+		<springloaded.version>1.2.3.RELEASE</springloaded.version>
 	</properties>
 
 	<dependencies>
@@ -42,6 +43,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework</groupId>
+						<artifactId>springloaded</artifactId>
+						<version>${springloaded.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
